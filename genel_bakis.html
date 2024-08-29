@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------CSS File -------------->
+    <link rel="stylesheet" href="sssss.css">
+    <!-- FontAwesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <!-- ChartJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <title> Genel Bakış</title>
+</head>
+
+<body>
+    <div id="blur" class="content-container">
+        <!-------------Sidebar  -------------->
+        <div class="side-bar">
+            <header>
+                <img src="images/logo.png" alt="">
+            </header>
+            <div class="menu">
+                <div class="item"><a href="genel_bakis.html"><i class="fa-solid fa-house"></i>Genel Bakış</a></div>
+                <div class="item">
+                    <a class="sub-btn">
+                        <i class="fa-solid fa-bars"></i>Siparişler<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">Siparişler</a>
+                        <a href="siparisler_mevcut.html" class="sub-item">Mevcut Siparişler</a>
+                        <a href="siparisler_gecmis.html" class="sub-item">Geçmiş Siparişler</a>
+                    </div>
+                </div>
+                <div class="item"><a href="kuryeSirketleri.html"><i class="fa-solid fa-motorcycle"></i>Kurye
+                        Şirketleri</a></div>
+                <div class="item"><a href="isletmeler.html"><i class="fa-solid fa-building"></i>İşletmeler</a></div>
+                <div class="item"><a href="kuryeler.html"><i class="fa-solid fa-truck-fast"></i>Kuryeler</a></div>
+                <div class="item">
+                    <a class="sub-btn"><i class="fa-solid fa-box"></i>Ürünler<i
+                            class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">1</a>
+                        <a href="#" class="sub-item">2</a>
+                        <a href="#" class="sub-item">3</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="sub-btn"><i class="fa-solid fa-users"></i>Kullanıcılar<i
+                            class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="kullanicilar_kuryeler.html" class="sub-item">Kuryeler</a>
+                        <a href="kullanicilar_restoranlar.html" class="sub-item">Restoranlar</a>
+                        <a href="kullanicilar_restoranKullanicilari.html" class="sub-item">Restoran Kullanıcıları</a>
+                        <a href="kullanicilar_sistemYoneticileri.html" class="sub-item">Sistem Yöneticileri</a>
+                    </div>
+                </div>
+                <div class="item"><a class="sub-btn"><i class="fa-solid fa-location-dot"></i>Bölgeler<i
+                            class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="bolge.html" class="sub-item">Bölgeler</a>
+                        <a href="iller.html" class="sub-item">İller</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="sub-btn"><i class="fa-regular fa-file-lines"></i>Raporlar<i
+                            class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="raporlar_genelRaporlar.html" class="sub-item">Genel Raporlar</a>
+                        <a href="raporlar_restoranRaporlari.html" class="sub-item">Restoran Raporları</a>
+                        <a href="raporlar_kuryeRaporlari.html" class="sub-item">Kurye Raporları</a>
+                        <a href="raporlar_restoranBazliKuryeRaporu.html" class="sub-item">Restoran Bazlı Kurye
+                            Raporları</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="sub-btn"><i class="fa-solid fa-map-location-dot"></i>Harita Gösterimi<i
+                            class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">1</a>
+                        <a href="#" class="sub-item">2</a>
+                        <a href="#" class="sub-item">3</a>
+                    </div>
+                </div>
+                <a class="link_name" href="#"><button>Telefon Sipariş Ekle</button></a>
+                <div class="item"><a href="ayarlar.html"><i class="fa-solid fa-gear"></i>Ayarlar</a></div>
+            </div>
+
+        </div>
+        <!-------------Navbar  -------------->
+        <div class="navbar">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Ara">
+            </div>
+            <div class="message-button">
+                <i class="fa-regular fa-comment-dots"></i>
+                <button onclick=""> Toplu Mesaj Gönder</button>
+            </div>
+        </div>
+
+
+        <div class="home-section">
+            <div class="container-graphs">
+                <div class="container-graphs-box1">
+                    <div class="container-text">Toplam Paket Satış
+                        <span class="text-header">3.07 M</span>
+                    </div>
+                    <div class="container-text">Paket Sayısı
+                        <span class="text-header">231</span>
+                    </div>
+                    <div class="container-text">Paket Ortalaması
+                        <span class="text-header">189,08 TL</span>
+                    </div>
+
+                </div>
+                <div class="container-graphs-box2">
+                    <div class="graph-info">
+                        <h3>Satış Kanalları Satış Miktarları</h3>
+                        7 günde teslimat
+                    </div>
+                    <div class="chart-label">
+                        <h3>Satış Kanalı</h3>
+                        <h3>Miktar</h3>
+                    </div>
+                    <canvas id="myChart" height="200"></canvas>
+                </div>
+                <div class="container-graphs-box3">
+                    <div class="graph-info">
+                        <h2>Günlük / Aylık Paket İstatisliği</h2>
+                    </div>
+                    <canvas id="packageChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+            <div class="table-box">
+                <table>
+                    <thead>
+                        <th>Tarih</th>
+                        <th>Saat</th>
+                        <th>Satış Kanalı</th>
+                        <th>Müşteri Adı</th>
+                        <th>Telefon No</th>
+                        <th>Konum</th>
+                        <th>Uzaklık</th>
+                        <th>Durum</th>
+                        <th>Tutar</th>
+                        <th>Ödeme Şekli</th>
+                        <th>Kurye</th>
+                    </thead>
+                    <tr>
+                        <td>13.04.2024</td>
+                        <td>11:24</td>
+                        <td>Yemeksepeti</td>
+                        <td>Sinem YILMAZ</td>
+                        <td>+905389765434</td>
+                        <td>
+                            <div class="adress-box">Bereketzade, 34421 Beyoğlu/İstanbul,Bereketzade, 34421
+                                Beyoğlu/İstanbul
+                            </div>
+                        </td>
+                        <td>Uzaklık</td>
+                        <td>
+                            <select class="table-select" id="sources" name="sources">
+                                <option value="#" selected>Onay Bekleniyor</option>
+                                <option value="#">query</option>
+                                <option value="#">query</option>
+                            </select>
+                        </td>
+                        <td> 600 TL</td>
+                        <td> Kapıda Ödeme</td>
+                        <td>
+                            <div class="table-btn">
+                                <button class="table-btn1">Rota</button>
+                                <button onclick="toggleBlur()" class="table-btn2">Kurye Ata</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13.04.2024</td>
+                        <td>11:24</td>
+                        <td>Yemeksepeti</td>
+                        <td>Sinem YILMAZ</td>
+                        <td>+905389765434</td>
+                        <td>
+                            <div class="adress-box">Bereketzade, 34421 Beyoğlu/İstanbul,Bereketzade, 34421
+                                Beyoğlu/İstanbul
+                            </div>
+                        </td>
+                        <td>Uzaklık</td>
+                        <td>
+                            <select class="table-select" id="sources" name="sources">
+                                <option value="#" selected>Onay Bekleniyor</option>
+                                <option value="#">query</option>
+                                <option value="#">query</option>
+                            </select>
+                        </td>
+                        <td> 600 TL</td>
+                        <td> Kapıda Ödeme</td>
+                        <td>
+                            <div class="table-btn">
+                                <button class="table-btn1">Rota</button>
+                                <button onclick="toggleBlur()" class="table-btn2">Kurye Ata</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13.04.2024</td>
+                        <td>11:24</td>
+                        <td>Yemeksepeti</td>
+                        <td>Sinem YILMAZ</td>
+                        <td>+905389765434</td>
+                        <td>
+                            <div class="adress-box">Bereketzade, 34421 Beyoğlu/İstanbul,Bereketzade, 34421
+                                Beyoğlu/İstanbul
+                            </div>
+                        </td>
+                        <td>Uzaklık</td>
+                        <td>
+                            <select class="table-select" id="sources" name="sources">
+                                <option value="#" selected>Onay Bekleniyor</option>
+                                <option value="#">query</option>
+                                <option value="#">query</option>
+                            </select>
+                        </td>
+                        <td> 600 TL</td>
+                        <td> Kapıda Ödeme</td>
+                        <td>
+                            <div class="table-btn">
+                                <button class="table-btn1">Rota</button>
+                                <button onclick="toggleBlur()" class="table-btn2">Kurye Ata</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13.04.2024</td>
+                        <td>11:24</td>
+                        <td>Yemeksepeti</td>
+                        <td>Sinem YILMAZ</td>
+                        <td>+905389765434</td>
+                        <td>
+                            <div class="adress-box">Bereketzade, 34421 Beyoğlu/İstanbul,Bereketzade, 34421
+                                Beyoğlu/İstanbul
+                            </div>
+                        </td>
+                        <td>Uzaklık</td>
+                        <td>
+                            <select class="table-select" id="sources" name="sources">
+                                <option value="#" selected>Onay Bekleniyor</option>
+                                <option value="#">query</option>
+                                <option value="#">query</option>
+                            </select>
+                        </td>
+                        <td> 600 TL</td>
+                        <td> Kapıda Ödeme</td>
+                        <td>
+                            <div class="table-btn">
+                                <button class="table-btn1">Rota</button>
+                                <button onclick="toggleBlur()" class="table-btn2">Kurye Ata</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13.04.2024</td>
+                        <td>11:24</td>
+                        <td>Yemeksepeti</td>
+                        <td>Sinem YILMAZ</td>
+                        <td>+905389765434</td>
+                        <td>
+                            <div class="adress-box">Bereketzade, 34421 Beyoğlu/İstanbul,Bereketzade, 34421
+                                Beyoğlu/İstanbul
+                            </div>
+                        </td>
+                        <td>Uzaklık</td>
+                        <td>
+                            <select class="table-select" id="sources" name="sources">
+                                <option value="#" selected>Onay Bekleniyor</option>
+                                <option value="#">query</option>
+                                <option value="#">query</option>
+                            </select>
+                        </td>
+                        <td> 600 TL</td>
+                        <td> Kapıda Ödeme</td>
+                        <td>
+                            <div class="table-btn">
+                                <button class="table-btn1">Rota</button>
+                                <button onclick="toggleBlur()" class="table-btn2">Kurye Ata</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13.04.2024</td>
+                        <td>11:24</td>
+                        <td>Yemeksepeti</td>
+                        <td>Sinem YILMAZ</td>
+                        <td>+905389765434</td>
+                        <td>
+                            <div class="adress-box">Bereketzade, 34421 Beyoğlu/İstanbul,Bereketzade, 34421
+                                Beyoğlu/İstanbul
+                            </div>
+                        </td>
+                        <td>Uzaklık</td>
+                        <td>
+                            <select class="table-select" id="sources" name="sources">
+                                <option value="#" selected>Onay Bekleniyor</option>
+                                <option value="#">query</option>
+                                <option value="#">query</option>
+                            </select>
+                        </td>
+                        <td> 600 TL</td>
+                        <td> Kapıda Ödeme</td>
+                        <td>
+                            <div class="table-btn">
+                                <button class="table-btn1">Rota</button>
+                                <button onclick="toggleBlur()" class="table-btn2">Kurye Ata</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13.04.2024</td>
+                        <td>11:24</td>
+                        <td>Yemeksepeti</td>
+                        <td>Sinem YILMAZ</td>
+                        <td>+905389765434</td>
+                        <td>
+                            <div class="adress-box">Bereketzade, 34421 Beyoğlu/İstanbul,Bereketzade, 34421
+                                Beyoğlu/İstanbul
+                            </div>
+                        </td>
+                        <td>Uzaklık</td>
+                        <td>
+                            <select class="table-select" id="sources" name="sources">
+                                <option value="#" selected>Onay Bekleniyor</option>
+                                <option value="#">query</option>
+                                <option value="#">query</option>
+                            </select>
+                        </td>
+                        <td> 600 TL</td>
+                        <td> Kapıda Ödeme</td>
+                        <td>
+                            <div class="table-btn">
+                                <button class="table-btn1">Rota</button>
+                                <button onclick="toggleBlur()" class="table-btn2">Kurye Ata</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13.04.2024</td>
+                        <td>11:24</td>
+                        <td>Yemeksepeti</td>
+                        <td>Sinem YILMAZ</td>
+                        <td>+905389765434</td>
+                        <td>
+                            <div class="adress-box">Bereketzade, 34421 Beyoğlu/İstanbul,Bereketzade, 34421
+                                Beyoğlu/İstanbul
+                            </div>
+                        </td>
+                        <td>Uzaklık</td>
+                        <td>
+                            <select class="table-select" id="sources" name="sources">
+                                <option value="#" selected>Onay Bekleniyor</option>
+                                <option value="#">query</option>
+                                <option value="#">query</option>
+                            </select>
+                        </td>
+                        <td> 600 TL</td>
+                        <td> Kapıda Ödeme</td>
+                        <td>
+                            <div class="table-btn">
+                                <button class="table-btn1">Rota</button>
+                                <button onclick="toggleBlur()" class="table-btn2">Kurye Ata</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <div id="popup">
+        <div class="popup-contents">
+            <h2>Kurye Ata</h2>
+            <div class="popup-select-box">
+                <hr>
+                <p>Kurye Seç*</p>
+
+                <select class="popup-select" id="sources" name="sources">
+                    <option value="#" selected>Tüm Sipariş Kanalları</option>
+                    <option value="#">query</option>
+                    <option value="#">query</option>
+                </select>
+            </div>
+            <div class="popup-btn">
+                <button onclick="toggleBlur()">İptal</button>
+                <button onclick="toggleBlur()">Kaydet</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src=" script.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script type='text/javascript' src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+</body>
+
+
+</html>
