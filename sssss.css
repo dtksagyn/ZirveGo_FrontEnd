@@ -376,7 +376,8 @@ header {
   margin: 4px;
 }
 .table-box .label-btn:hover {
-  background-color: #20c997;
+  background-color: transparent;
+  border: 1px solid #16a596;
 }
 .table-box .edit-btn {
   background-color: transparent;

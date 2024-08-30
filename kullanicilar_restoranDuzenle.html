@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<!-- Coding by CodingNepal | www.codingnepalweb.com -->
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title> Restoranlar </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-------------CSS File -------------->
     <link rel="stylesheet" href="sssss.css">
+
     <!-- FontAwesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title> Genel Bakış</title>
+
     <!-- JQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restoran Düzenle</title>
 </head>
 
 <body>
-
     <!-------------Sidebar  -------------->
     <div class="side-bar">
         <header>
@@ -99,112 +101,64 @@
         </div>
     </div>
 
-    <!--HOME SECTION-->
-    <div class="home-section">
 
+    <div class="home-section">
         <!--BUTTONS ON TOP OF CONTENT-->
         <div class="header-box">
-            <h2>Kullanıcılar > Restoranlar</h2>
+            <h2>Restoran Düzenle</h2>
             <div class="button-box">
                 <button>Restoran Ekle</button>
             </div>
         </div>
-        <div class="table-box">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Adı</th>
-                        <th>Telefon</th>
-                        <th>Üye</th>
-                        <th>Oluşturulma Tarihi</th>
-                        <th> </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>94</td>
-                        <td>Pasaport Pizza</td>
-                        <td>(5446875654) </td>
-                        <td>Aktif</td>
-                        <td>12.06.2023</td>
-                        <td>
-                            <div class="edit-buttons">
-                                <button onclick="location.href='kullanicilar_restoranDuzenle.html'"><i
-                                        class="fa-solid fa-pencil"></i> </button>
-                                <button><i class="fa-solid fa-link"></i></button>
-                                <button><i class="fa-solid fa-trash"></i></i></button>
-                            </div>
-                        </td>
-                    </tr>
+        <!-- contact form -->
+        <section id="contact">
 
-                    <tr>
-                        <td>94</td>
-                        <td>Pasaport Pizza</td>
-                        <td>(5446875654) </td>
-                        <td>Aktif</td>
-                        <td>12.06.2023</td>
-                        <td>
-                            <div class="edit-buttons">
-                                <button onclick="location.href='kullanicilar_restoranDuzenle.html'"><i
-                                        class="fa-solid fa-pencil"></i> </button>
-                                <button><i class="fa-solid fa-link"></i></button>
-                                <button><i class="fa-solid fa-trash"></i></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>94</td>
-                        <td>Pasaport Pizza</td>
-                        <td>(5446875654) </td>
-                        <td>Aktif</td>
-                        <td>12.06.2023</td>
-                        <td>
-                            <div class="edit-buttons">
-                                <button onclick="location.href='kullanicilar_restoranDuzenle.html'"><i
-                                        class="fa-solid fa-pencil"></i> </button>
-                                <button><i class="fa-solid fa-link"></i></button>
-                                <button><i class="fa-solid fa-trash"></i></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>94</td>
-                        <td>Pasaport Pizza</td>
-                        <td>(5446875654) </td>
-                        <td>Aktif</td>
-                        <td>12.06.2023</td>
-                        <td>
-                            <div class="edit-buttons">
-                                <button onclick="location.href='kullanicilar_restoranDuzenle.html'"><i
-                                        class="fa-solid fa-pencil"></i> </button>
-                                <button><i class="fa-solid fa-link"></i></button>
-                                <button><i class="fa-solid fa-trash"></i></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>94</td>
-                        <td>Pasaport Pizza</td>
-                        <td>(5446875654) </td>
-                        <td>Aktif</td>
-                        <td>12.06.2023</td>
-                        <td>
-                            <div class="edit-buttons">
-                                <button onclick="location.href='kullanicilar_restoranDuzenle.html'"><i
-                                        class="fa-solid fa-pencil"></i> </button>
-                                <button><i class="fa-solid fa-link"></i></button>
-                                <button><i class="fa-solid fa-trash"></i></i></button>
-                            </div>
-                        </td>
-                    </tr>
+            <form>
 
+                <label class="form-label">Üye Bilgisi *</label>
+                <div class=" input-group">
+                    <select class="form-select">
+                        <option value="#" selected> </option>
+                        <option value="#"> query</option>
+                        <option value="#"> query</option>
+                    </select>
+                </div>
+                <label class="form-label">Şehir *</label>
+                <div class=" input-group">
+                    <select class="form-select">
+                        <option value="#" selected> </option>
+                        <option value="#"> query</option>
+                        <option value="#"> query</option>
+                    </select>
+                </div>
+                <label class="form-label">Bölge *</label>
+                <div class=" input-group">
+                    <select class="form-select">
+                        <option value="#" selected> </option>
+                        <option value="#"> query</option>
+                        <option value="#"> query</option>
+                    </select>
+                </div>
+                <label class="form-label">Restoran Adı *</label>
+                <input type="password">
+                <label class="form-label">Telefon *</label>
+                <input type="number">
+                <label class="form-label">Durum *</label>
+                <div class=" input-group">
+                    <select class="form-select">
+                        <option value="#" selected> </option>
+                        <option value="#"> query</option>
+                        <option value="#"> query</option>
+                    </select>
 
-            </table>
-        </div>
+                    </select>
+                </div>
+            </form>
+
+    </div>
+    </section>
     </div>
     <script src="script.js"></script>
-
 </body>
 
 </html>
