@@ -157,7 +157,18 @@ body {
 .side-bar .menu .item .sub-menu a:hover {
   opacity: 1;
 }
-
+.side-bar button {
+  width: 95%;
+  height: 50px;
+  background-color: #4a4ce8;
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.side-bar button:hover {
+  background-color: #578aff;
+}
 .rotate {
   transform: rotate(90deg);
 }
@@ -597,4 +608,88 @@ header {
   background-color: transparent;
   padding: 7px;
   border-radius: 7px;
+}
+/*------------- Entegrasyon Style--------------*/
+.content-table {
+  margin-top: 20px;
+  width: 95%;
+  height: fit-content;
+  text-align: left;
+}
+.row-table {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 70px;
+  background-color: #ff699c;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.user-input {
+  height: 70px;
+  width: 500px;
+  margin: 0 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.input-box {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 5px 0;
+}
+.user-input input {
+  width: 350px;
+  height: 20px;
+  border: 1px solid #ababab;
+  background-color: transparent;
+  border-radius: 7px;
+  outline: none;
+}
+.config {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border: 2px solid #ff8484;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.circle {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ff8484;
+  transition: 0.3s;
+}
+.active {
+  border-color: #20c997;
+}
+.active + .text {
+  color: #20c997;
+}
+.active .circle {
+  left: 100%;
+  transform: translateX(-100%);
+  transition: 0.3s;
+  background-color: #20c997;
 }

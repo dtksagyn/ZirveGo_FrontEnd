@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------CSS File -------------->
+    <link rel="stylesheet" href="sssss.css">
+    <!-- FontAwesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+    <title>Restoran Entegrasyon Bilgileri</title>
+</head>
+
+<body>
+    <!-------------Sidebar  -------------->
+    <div class="side-bar">
+        <header>
+            <img src="images/logo.png" alt="">
+        </header>
+        <div class="menu">
+            <div class="item"><a href="genel_bakis.html"><i class="fa-solid fa-house"></i>Genel Bakış</a></div>
+            <div class="item">
+                <a class="sub-btn">
+                    <i class="fa-solid fa-bars"></i>Siparişler<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Siparişler</a>
+                    <a href="siparisler_mevcut.html" class="sub-item">Mevcut Siparişler</a>
+                    <a href="siparisler_gecmis.html" class="sub-item">Geçmiş Siparişler</a>
+                </div>
+            </div>
+            <div class="item"><a href="kuryeSirketleri.html"><i class="fa-solid fa-motorcycle"></i>Kurye
+                    Şirketleri</a></div>
+            <div class="item"><a href="isletmeler.html"><i class="fa-solid fa-building"></i>İşletmeler</a></div>
+            <div class="item"><a href="kuryeler.html"><i class="fa-solid fa-truck-fast"></i>Kuryeler</a></div>
+            <div class="item">
+                <a class="sub-btn"><i class="fa-solid fa-box"></i>Ürünler<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">1</a>
+                    <a href="#" class="sub-item">2</a>
+                    <a href="#" class="sub-item">3</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"><i class="fa-solid fa-users"></i>Kullanıcılar<i
+                        class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="kullanicilar_kuryeler.html" class="sub-item">Kuryeler</a>
+                    <a href="kullanicilar_restoranlar.html" class="sub-item">Restoranlar</a>
+                    <a href="kullanicilar_restoranKullanicilari.html" class="sub-item">Restoran Kullanıcıları</a>
+                    <a href="kullanicilar_sistemYoneticileri.html" class="sub-item">Sistem Yöneticileri</a>
+                </div>
+            </div>
+            <div class="item"><a class="sub-btn"><i class="fa-solid fa-location-dot"></i>Bölgeler<i
+                        class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="bolge.html" class="sub-item">Bölgeler</a>
+                    <a href="iller.html" class="sub-item">İller</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"><i class="fa-regular fa-file-lines"></i>Raporlar<i
+                        class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="raporlar_genelRaporlar.html" class="sub-item">Genel Raporlar</a>
+                    <a href="raporlar_restoranRaporlari.html" class="sub-item">Restoran Raporları</a>
+                    <a href="raporlar_kuryeRaporlari.html" class="sub-item">Kurye Raporları</a>
+                    <a href="raporlar_restoranBazliKuryeRaporu.html" class="sub-item">Restoran Bazlı Kurye
+                        Raporları</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"><i class="fa-solid fa-map-location-dot"></i>Harita Gösterimi<i
+                        class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">1</a>
+                    <a href="#" class="sub-item">2</a>
+                    <a href="#" class="sub-item">3</a>
+                </div>
+            </div>
+            <a class="link_name" href="#"><button>Telefon Sipariş Ekle</button></a>
+            <div class="item"><a href="ayarlar.html"><i class="fa-solid fa-gear"></i>Ayarlar</a></div>
+        </div>
+
+    </div>
+    <!-------------Navbar  -------------->
+    <div class="navbar">
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Ara">
+        </div>
+        <div class="message-button">
+            <i class="fa-regular fa-comment-dots"></i>
+            <button onclick=""> Toplu Mesaj Gönder</button>
+        </div>
+    </div>
+    <div class="home-section">
+        <!--BUTTONS ON TOP OF CONTENT-->
+        <div class="header-box">
+            <h2>Restoran Entegrasyon Bilgileri</h2>
+        </div>
+        <div class="content-table">
+
+            <div class="row-table">
+                <div class="box">Yemeksepeti</div>
+                <div class="user-input">
+                    <div class="input-box">Yetkili e-posta
+                        <input type="email">
+                    </div>
+                    <div class="input-box">Yetkili şifre
+                        <input type="password">
+                    </div>
+
+                </div>
+                <div class="config">
+                    <p>Pazaryeri Yönetimi</p>
+                    <div class="toggle" onclick="toggle(this)">
+                        <div class="circle"></div>
+                    </div>
+                    <span class="text">Kapalı</span>
+                </div>
+            </div>
+            <div class="row-table">
+                <div class="box">Yemeksepeti</div>
+                <div class="user-input">
+                    <div class="input-box">Yetkili e-posta
+                        <input type="email">
+                    </div>
+                    <div class="input-box">Yetkili şifre
+                        <input type="password">
+                    </div>
+
+                </div>
+                <div class="config">
+                    <p>Pazaryeri Yönetimi</p>
+                    <div class="toggle" onclick="toggle(this)">
+                        <div class="circle"></div>
+                    </div>
+                    <span class="text">Kapalı</span>
+                </div>
+            </div>
+            <div class="row-table">
+                <div class="box">Yemeksepeti</div>
+                <div class="user-input">
+                    <div class="input-box">Yetkili e-posta
+                        <input type="email">
+                    </div>
+                    <div class="input-box">Yetkili şifre
+                        <input type="password">
+                    </div>
+
+                </div>
+                <div class="config">
+                    <p>Pazaryeri Yönetimi</p>
+                    <div class="toggle" onclick="toggle(this)">
+                        <div class="circle"></div>
+                    </div>
+                    <span class="text">Kapalı</span>
+                </div>
+            </div>
+            <div class="row-table">
+                <div class="box">Yemeksepeti</div>
+                <div class="user-input">
+                    <div class="input-box">Yetkili e-posta
+                        <input type="email">
+                    </div>
+                    <div class="input-box">Yetkili şifre
+                        <input type="password">
+                    </div>
+
+                </div>
+                <div class="config">
+                    <p>Pazaryeri Yönetimi</p>
+                    <div class="toggle" onclick="toggle(this)">
+                        <div class="circle"></div>
+                    </div>
+                    <span class="text">Kapalı</span>
+                </div>
+            </div>
+            <div class="row-table">
+                <div class="box">Yemeksepeti</div>
+                <div class="user-input">
+                    <div class="input-box">Yetkili e-posta
+                        <input type="email">
+                    </div>
+                    <div class="input-box">Yetkili şifre
+                        <input type="password">
+                    </div>
+
+                </div>
+                <div class="config">
+                    <p>Pazaryeri Yönetimi</p>
+                    <div class="toggle" onclick="toggle(this)">
+                        <div class="circle"></div>
+                    </div>
+                    <span class="text">Kapalı</span>
+                </div>
+            </div>
+            <div class="row-table">
+                <div class="box">Yemeksepeti</div>
+                <div class="user-input">
+                    <div class="input-box">Yetkili e-posta
+                        <input type="email">
+                    </div>
+                    <div class="input-box">Yetkili şifre
+                        <input type="password">
+                    </div>
+
+                </div>
+                <div class="config">
+                    <p>Pazaryeri Yönetimi</p>
+                    <div class="toggle" onclick="toggle(this)">
+                        <div class="circle"></div>
+                    </div>
+                    <span class="text">Kapalı</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggle(element) {
+            // Toggle the active class on the clicked toggle button
+            element.classList.toggle("active");
+
+            // Find the next sibling element, which is the span with the text
+            let text = element.nextElementSibling;
+
+            // Change the text content based on the toggle state
+            if (element.classList.contains("active")) {
+                text.textContent = "Açık";
+            } else {
+                text.textContent = "Kapalı";
+            }
+        }
+    </script>
+    <script src=" script.js"></script>
+</body>
+
+</html>
