@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: #3c5995;
 }
 body {
   font-size: 12px;
-  overflow: auto;
 }
 
 /*---------------POPUP STYLE----------------*/
@@ -86,109 +89,136 @@ body {
 
 /*---------------SIDEBAR STYLE----------------*/
 
+header img {
+  width: 130px;
+  margin: 10px;
+  margin-left: 50px;
+}
+header {
+  background-color: white;
+}
+
 .side-bar {
-  background: #578aff;
-  backdrop-filter: blur(15px);
+  background: rgb(50, 100, 250);
   width: 250px;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
-  overflow-y: auto;
-  transition: 0.6s ease;
+  overflow-y: hidden;
+  transition: 0.6 ease;
   transition-property: left;
 }
-
-.side-bar::-webkit-scrollbar {
-  width: 0px;
-}
-
-.side-bar.active {
-  left: 0;
-}
-
-.side-bar .menu {
+.menu {
   width: 100%;
   margin-top: 15px;
 }
-
-.side-bar .menu .item {
+.menu .item {
   position: relative;
   cursor: pointer;
-  background-color: #fff;
-  margin: 8px;
-  border-radius: 5px;
+  margin: 15px;
+  background-color: white;
+  padding-top: 30px 0 30px 0;
+  border-radius: 3px;
 }
-.side-bar .menu .item a {
-  color: #3c5995;
+.menu .item a {
+  color: rgb(0 100 200 / 70%);
   font-size: 12px;
+  font-weight: bold;
   text-decoration: none;
   display: block;
-  padding: 9px 30px;
-  font-weight: 600;
+  padding: 5px 30px;
+  line-height: 20px;
 }
-.side-bar .menu .item a:hover {
-  background: #578aff;
-  transition: 0.3s ease;
+.menu .item a:hover {
+  background-color: rgb(128 128 128 / 10%);
 }
-
-.side-bar .menu .item i {
+.item i {
   margin-right: 15px;
+  color: rgb(0 0 0 / 70%);
+  font-size: 13px;
 }
 
-.side-bar .menu .item a .dropdown {
+.btn {
+  position: relative;
+  padding: 13px 51px;
+  margin-left: 16px;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border: 0.5px solid rgb(255 255 255);
+  border-radius: 3px;
+}
+
+.item a .dropdown {
   position: absolute;
-  right: 20px;
+  right: 0;
+  margin: auto 15px;
   transition: 0.3s ease;
 }
-
-.side-bar .menu .item .sub-menu {
-  margin: -5px;
-  background: #578aff;
+.item .sub-menu {
+  background: rgb(50, 100, 250);
   display: none;
 }
-
-.side-bar .menu .item .sub-menu a {
-  padding-left: 80px;
-  color: white;
-  opacity: 0.6;
-  line-height: 10px;
+.item .sub-menu a {
+  opacity: 0.5;
 }
-.side-bar .menu .item .sub-menu a:hover {
+.item .sub-menu a:hover {
   opacity: 1;
 }
-.side-bar button {
-  width: 95%;
-  height: 50px;
-  background-color: #4a4ce8;
+
+.item .sub-menu a {
+  padding-left: 80px;
   color: white;
-  border: 1px solid white;
+}
+.item a .goright {
+  padding-left: 0px;
+  color: white;
+}
+
+.item2 a {
+  position: relative;
+  padding: 8px 10px;
   text-decoration: none;
-  margin-left: 5px;
-}
-.side-bar button:hover {
-  background-color: #578aff;
-}
-.rotate {
-  transform: rotate(90deg);
-}
-
-@media (max-width: 900px) {
-  .main h1 {
-    font-size: 40px;
-    line-height: 60px;
-  }
+  margin: 10px 16px;
+  background-color: white;
+  display: block;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(0 100 200 / 70%);
 }
 
-img {
-  width: 200px;
-  margin: 5px;
+.item2 i {
+  color: rgb(0 0 0 / 70%);
+  margin: 5px 20px;
+}
+.item3 {
+  display: flex;
+  background-color: white;
+  margin: 15px;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid rgb(128 128 128);
+}
+.item3 i {
+  color: rgb(0 0 0 / 70%);
+  font-size: 20px;
   margin-left: 20px;
 }
-
-header {
-  background: white;
-  height: 65px;
+.item3 a {
+  color: rgb(0 100 200 / 70%);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: justify;
+  padding-left: 25px;
+}
+span {
+  font-weight: lighter;
+  padding-left: 25px;
 }
 
 /*---------------NAVBAR STYLE----------------*/
