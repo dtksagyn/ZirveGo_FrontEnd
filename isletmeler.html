@@ -3,134 +3,288 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-------------CSS File -------------->
     <link rel="stylesheet" href="sssss.css">
     <!-- FontAwesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- JQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İşletmeler</title>
 </head>
 
 <body>
 
-    <!--HOME SECTION-->
-    <div class="home-section">
-        <!--navigation bar-->
-        <nav>
-            <div class="container">
-                <div class="search-box">
-                    <i class="bx bx-search"></i>
-                    <input type="search" placeholder="Ara">
+    <div id="blur" class="content-container">
+        <!-------------Sidebar  -------------->
+        <div class="side-bar">
+            <header>
+                <!--Logo with white background-->
+                <img src="images/logo.png" />
+            </header>
+
+            <div class="menu">
+                <div class="item">
+                    <a href="genel_bakis.html"><i class="fa-solid fa-house"></i>Genel Bakış</a>
                 </div>
-                <div class="message-btn-box">
-                    <i class="bx bx-message"></i>
-                    <button>Toplu Mesaj Gönder</button>
+                <div class="item">
+                    <a class="sub-btn"><i class="fa-solid fa-bars"></i>Siparişler
+                        <!--dropdown menu-->
+                        <!--dropdown arrow-->
+                        <i class="fas fa-angle-down dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+
+                        <a href="siparisler_mevcut.html" class="sub-item"><i
+                                class="fas fa-angle-right goright"></i>Mevcut
+                            Siparişler</a>
+                        <a href="siparisler_gecmis.html" class="sub-item"><i
+                                class="fas fa-angle-right goright"></i>Geçmiş
+                            Siparişler
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="kuryeSirketleri.html"><i class="fa-solid fa-motorcycle"></i>Kurye Şirketleri</a>
+                </div>
+                <div class="item">
+                    <a href="isletmeler.html"><i class="fa-solid fa-building"></i>İşletmeler</a>
+                </div>
+                <div class="item">
+                    <a href="kuryeler.html"><i class="fa-solid fa-users"></i>Kuryeler</a>
+                </div>
+                <div class="item">
+                    <a class="sub-btn"><i class="fa-solid fa-box-archive"></i>Ürünler
+                        <!--dropdown menu-->
+                        <i class="fas fa-angle-down dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="" class="sub-item"><i class="fas fa-angle-right goright"></i>item1</a>
+                        <a href="" class="sub-item"><i class="fas fa-angle-right goright"></i>item2</a>
+                        <a href="" class="sub-item"><i class="fas fa-angle-right goright"></i>item3</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a class="sub-btn"><i class="fa-solid fa-user"></i>Kullanıcılar
+                        <!--dropdown menu-->
+                        <i class="fas fa-angle-down dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="kullanicilar_kuryeler.html" class="sub-item"><i
+                                class="fas fa-angle-right goright"></i>Kuryeler</a>
+                        <a href="kullanicilar_restoranlar.html" class="sub-item"><i
+                                class="fas fa-angle-right goright"></i>Restoranlar</a>
+                        <a href="kullanicilar_restoranKullanicilari.html" class="sub-item"><i
+                                class="fas fa-angle-right goright"></i>Restoran Kullanıcıları</a>
+                        <a href="kullanicilar_sistemYoneticileri.html" class="sub-item"><i
+                                class="fas fa-angle-right goright"></i>Sistem Yöneticileri</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="sub-btn"><i class="fa-solid fa-location-dot"></i>Bölgeler
+                        <!--dropdown menu-->
+                        <i class="fas fa-angle-down dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="bolge.html" class="sub-item"><i class="fas fa-angle-right goright"></i>Bölgeler</a>
+                        <a href="iller.html" class="sub-item"><i class="fas fa-angle-right goright"></i>İller</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="sub-btn"><i class="fa-solid fa-file-lines"></i>Raporlar
+                        <!--dropdown menu-->
+                        <i class="fas fa-angle-down dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="raporlar_genelRaporlar.html" class="sub-item"><i
+                                class="fas fa-angle-right goright"></i>Genel Raporlar</a>
+                        <a href="raporlar_restoranRaporlari.html" class="sub-item"><i
+                                class="fas fa-angle-right goright"></i>Restoran Raporları</a>
+                        <a href="raporlar_kuryeRaporlari.html" class="sub-item"><i
+                                class="fas fa-angle-right goright"></i>Kurye Raporları</a>
+                        <a href="raporlar_restoranBazliKuryeRaporu.html" class="sub-item"><i
+                                class="fas fa-angle-right goright"></i>Restoran Bazlı Kurye
+                            Raporları</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="sub-btn">
+                        <i class="fa-solid fa-map"></i>Harita Gösterim
+                        <!--dropdown menu-->
+                        <i class="fas fa-angle-down dropdown"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="" class="sub-item"><i class="fas fa-angle-right goright"></i>item1</a>
+                        <a href="" class="sub-item"><i class="fas fa-angle-right goright"></i>item2</a>
+                        <a href="" class="sub-item"><i class="fas fa-angle-right goright"></i>item3</a>
+                    </div>
+                </div>
+
+                <div class="item2">
+                    <a href=""><i class="fa-solid fa-gear"></i>Ayarlar</a>
+                </div>
+
+                <div class="last-container">
+                    <div class="item3">
+                        <div class="box-profile"><img src="profile.png" width="50px"></div>
+                        <div class="box2">
+                            <h4>Sevgi Özyağcı</h4> <span>Yetkili</span> </a>
+                        </div>
+                        <div class="box3">
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <!--BUTTONS ON TOP OF CONTENT-->
-        <div class="content-header">
-            <h2>İşletmeler</h2>
-            <button>Kurye Şirketi Ekle</button>
         </div>
+        <!-------------Navbar  -------------->
+        <div class="navbar">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Ara">
+            </div>
+            <div class="message-button">
+                <i class="fa-regular fa-comment-dots"></i>
+                <button onclick=""> Toplu Mesaj Gönder</button>
+            </div>
 
-        <div class="table-container">
-            <table class="content-table">
-                <thead>
-                    <tr class="column-names">
-                        <th>Id</th>
-                        <th>Restoran Adı</th>
-                        <th>Durum</th>
-                        <th>Oluşturulma Tarihi</th>
-                        <th> </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>9</td>
-                        <td>E Şirketi</td>
-                        <td>Aktif</td>
-                        </td>
-                        <td>12.06.2023</td>
-                        <td>
-                            <div class="edit-buttons">
-                                <button><i class='bx bx-edit'></i> </button>
-                                <button><i class="bx bx-link"></i></button>
-                                <button class="filter-btn">Sayfaya Git</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>A Şirketi</td>
-                        <td>Aktif </td>
-                        <td>12.06.2023</td>
-                        <td>
-                            <div class="edit-buttons">
-                                <button><i class='bx bx-edit'></i> </button>
-                                <button><i class="bx bx-link"></i></button>
-                                <button class="filter-btn">Sayfaya Git</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td>B Şirketi</td>
-                        <td>Aktif </td>
-                        <td>12.06.2023</td>
-                        <td>
-                            <div class="edit-buttons">
-                                <button><i class='bx bx-edit'></i> </button>
-                                <button><i class="bx bx-link"></i></button>
-                                <button class="filter-btn">Sayfaya Git</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>C Şirketi</td>
-                        <td>Aktif </td>
-                        <td>12.06.2023</td>
-                        <td>
-                            <div class="edit-buttons">
-                                <button><i class='bx bx-edit'></i> </button>
-                                <button><i class="bx bx-link"></i></button>
-                                <button class="filter-btn">Sayfaya Git</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>D Şirketi</td>
-                        <td>Aktif </td>
-                        <td>12.06.2023</td>
-                        <td>
-                            <div class="edit-buttons">
-                                <button><i class='bx bx-edit'></i> </button>
-                                <button><i class="bx bx-link"></i></button>
-                                <button class="filter-btn">Sayfaya Git</button>
-                            </div>
-                        </td>
-                    </tr>
+        </div>
+        <div class="home-section">
+            <!--BUTTONS ON TOP OF CONTENT-->
+            <div class="header-box">
+                <h2>İşletmeler</h2>
 
-
-                </tbody>
-            </table>
+                <div class="button-box">
+                    <button onclick="toggleBlur()">Kurye Şirketi Ekle</button>
+                </div>
+            </div>
+            <div class=" table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Kurye Şirketi</th>
+                            <th>Durum</th>
+                            <th>Oluşturma Tarihi</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12</td>
+                            <td>A Şirketi</td>
+                            <td>Aktif</td>
+                            <td>12.08.2024</td>
+                            <td>
+                                <div class="table-buttons">
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-trash"></i></button>
+                                    <button class="label-btn" onclick="" style="background-color: #1EC997;">Sayfaya
+                                        Git</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>A Şirketi</td>
+                            <td>Aktif</td>
+                            <td>12.08.2024</td>
+                            <td>
+                                <div class="table-buttons">
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-trash"></i></button>
+                                    <button class="label-btn" onclick="" style="background-color: #1EC997;">Sayfaya
+                                        Git</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>A Şirketi</td>
+                            <td>Aktif</td>
+                            <td>12.08.2024</td>
+                            <td>
+                                <div class="table-buttons">
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-trash"></i></button>
+                                    <button class="label-btn" onclick="" style="background-color: #1EC997;">Sayfaya
+                                        Git</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>A Şirketi</td>
+                            <td>Aktif</td>
+                            <td>12.08.2024</td>
+                            <td>
+                                <div class="table-buttons">
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-trash"></i></button>
+                                    <button class="label-btn" onclick="" style="background-color: #1EC997;">Sayfaya
+                                        Git</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>A Şirketi</td>
+                            <td>Aktif</td>
+                            <td>12.08.2024</td>
+                            <td>
+                                <div class="table-buttons">
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-trash"></i></button>
+                                    <button class="label-btn" onclick="" style="background-color: #1EC997;">Sayfaya
+                                        Git</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>A Şirketi</td>
+                            <td>Aktif</td>
+                            <td>12.08.2024</td>
+                            <td>
+                                <div class="table-buttons">
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="edit-btn" onclick=""><i class="fa-solid fa-trash"></i></button>
+                                    <button class="label-btn" onclick="" style="background-color: #1EC997;">Sayfaya
+                                        Git</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-    <script>
-        let arrow = document.querySelectorAll(".arrow");
-        for (var i = 0; i < arrow.length; i++) {
-            arrow[i].addEventListener("click", (e) => {
-                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-                arrowParent.classList.toggle("showMenu");
-            });
-        }
+    <div id="popup">
+        <div class="popup-contents">
+            <h2>Kurye Ata</h2>
+            <hr>
+            <div class="popup-select-box">
 
+                <p>Kurye Seç*</p>
 
-    </script>
+                <select class="popup-select" id="sources" name="sources">
+                    <option value="#" selected>Tüm Sipariş Kanalları</option>
+                    <option value="#">query</option>
+                    <option value="#">query</option>
+                </select>
+            </div>
+            <div class="popup-btn">
+                <button onclick="toggleBlur()">İptal</button>
+                <button onclick="toggleBlur()">Kaydet</button>
+            </div>
+        </div>
+    </div>
+
+    <script src=" script.js"></script>
+
 </body>
 
 </html>

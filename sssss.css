@@ -47,13 +47,13 @@ body {
 }
 #popup .popup-contents {
   width: 100%;
-  position: relative;
 }
 #popup .popup-select-box {
-  margin: 5px;
+  margin-top: 20px;
 }
 #popup select {
   padding: 10px;
+  margin: 10px;
   width: 90%;
   border: 1px solid #ababab;
   border-radius: 15px;
