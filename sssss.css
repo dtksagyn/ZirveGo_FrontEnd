@@ -138,21 +138,6 @@ header {
   font-size: 13px;
 }
 
-.btn {
-  position: relative;
-  padding: 13px 51px;
-  margin-left: 16px;
-  top: 0;
-  bottom: 0;
-  text-align: center;
-  background-color: blue;
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
-  border: 0.5px solid rgb(255 255 255);
-  border-radius: 3px;
-}
-
 .item a .dropdown {
   position: absolute;
   right: 0;
